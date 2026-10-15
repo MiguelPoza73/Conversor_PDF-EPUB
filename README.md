@@ -6,7 +6,7 @@ Aplicación de escritorio en Python para convertir **PDF a EPUB** y **EPUB a PDF
 
 1. Instala Python 3.13 desde https://www.python.org/downloads/ con Tcl/Tk y la opción de añadir Python al PATH.
 2. Instala Visual Studio Code y la extensión **Python** de Microsoft.
-3. Abre esta carpeta (`conversor-de-archivos`) en VS Code.
+3. Abre esta carpeta (`Conversor_PDF-EPUB`) en VS Code.
 4. En **Terminal → Nueva terminal**, usando PowerShell, ejecuta:
 
 ```powershell
