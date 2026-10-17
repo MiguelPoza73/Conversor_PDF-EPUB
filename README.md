@@ -2,7 +2,34 @@
 
 Aplicación de escritorio en Python para convertir **PDF a EPUB** y **EPUB a PDF**. Interfaz sencilla en español, sin servidor, cuentas ni servicios externos. Los archivos se procesan en tu ordenador.
 
-## Preparar el proyecto en VS Code
+## Descargar y ejecutar en Windows
+
+**Solo necesitas descargar el ejecutable desde [Releases](https://github.com/MiguelPoza73/conversor-de-archivos/releases). No necesitas descargar ni instalar Python, VS Code ni ninguna dependencia.**
+
+1. Entra en **Releases** y abre la versión más reciente.
+2. En **Assets**, descarga **`ConversorDeArchivos.exe`**. No necesitas los archivos `Source code`.
+3. Guarda el `.exe` donde prefieras y ábrelo con doble clic. No requiere instalación.
+
+El primer arranque puede tardar unos segundos. Para actualizarlo, cierra el programa y sustituye tu copia por el `.exe` de la nueva Release; no se actualiza automáticamente.
+
+## Manual de uso
+
+1. Pulsa **Seleccionar archivo** y abre un PDF o EPUB.
+2. Pulsa **Convertir y guardar**. El formato de salida se elige automáticamente: PDF → EPUB o EPUB → PDF.
+3. Elige el nombre y la carpeta de destino. El diálogo solicita confirmación si el archivo ya existe.
+4. Espera al mensaje de finalización. La ventana sigue respondiendo durante la conversión.
+
+El original se conserva. Si la conversión falla, se muestra el error y no se publica un archivo incompleto ni se reemplaza el destino existente.
+
+### Leer el EPUB en Kindle
+
+Envía el EPUB mediante [Send to Kindle](https://www.amazon.com/sendtokindle), en un dispositivo compatible con ese servicio. La aplicación solo genera el archivo; no lo envía automáticamente. Un EPUB no está pensado para copiarlo directamente por USB a un Kindle.
+
+## Desarrollo (opcional)
+
+Esta sección es solo para modificar el código o generar tu propio ejecutable. **Para usar el programa basta con descargar el `.exe` desde Releases.**
+
+### Preparar el proyecto en VS Code
 
 1. Instala Python 3.13 desde https://www.python.org/downloads/ con Tcl/Tk y la opción de añadir Python al PATH.
 2. Instala Visual Studio Code y la extensión **Python** de Microsoft.
@@ -19,20 +46,7 @@ No necesitas activar el entorno ni cambiar la política de ejecución de PowerSh
 
 En VS Code, pulsa `Ctrl+Shift+P`, elige **Python: Select Interpreter** y selecciona `.venv\Scripts\python.exe`.
 
-## Manual de uso
-
-1. Pulsa **Seleccionar archivo** y abre un PDF o EPUB.
-2. Pulsa **Convertir y guardar**. El formato de salida se elige automáticamente: PDF → EPUB o EPUB → PDF.
-3. Elige el nombre y la carpeta de destino. El diálogo solicita confirmación si el archivo ya existe.
-4. Espera al mensaje de finalización. La ventana sigue respondiendo durante la conversión.
-
-El original se conserva. Si la conversión falla, se muestra el error y no se publica un archivo incompleto ni se reemplaza el destino existente.
-
-### Leer el EPUB en Kindle
-
-Envía el EPUB mediante [Send to Kindle](https://www.amazon.com/sendtokindle), en un dispositivo compatible con ese servicio. La aplicación solo genera el archivo; no lo envía automáticamente. Un EPUB no está pensado para copiarlo directamente por USB a un Kindle.
-
-## Crear y distribuir el ejecutable de Windows
+### Crear y distribuir el ejecutable de Windows
 
 Desde la carpeta del proyecto, con el entorno preparado:
 
